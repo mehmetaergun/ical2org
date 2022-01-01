@@ -78,7 +78,7 @@ BEGIN {
 
     # set to 1 or 0 to yes or not output the original ical preamble as
     # comment
-    preamble = 1;
+    preamble = 0;
 
     # set to 1 to output time and summary as one line starting with
     # the time (value 1) or to 0 to output the summary as first line
@@ -97,16 +97,16 @@ BEGIN {
     trimdots = 1;
 
     # change this to your name
-    author = ENVIRON["AUTHOR"] != "" ? ENVIRON["AUTHOR"] : "Marc Sherry"
+    author = ENVIRON["AUTHOR"] != "" ? ENVIRON["AUTHOR"] : "Mehmet Atif Ergun"
 
     # and to your email address
-    emailaddress = ENVIRON["EMAIL"] != "" ? ENVIRON["EMAIL"] : "unknown"
+    emailaddress = ENVIRON["EMAIL"] != "" ? ENVIRON["EMAIL"] : "N/A"
 
     # calendar/category name for display in org-mode
-    calendarname = ENVIRON["CALENDAR"] != "" ? ENVIRON["CALENDAR"] : "unknown"
+    calendarname = ENVIRON["CALENDAR"] != "" ? ENVIRON["CALENDAR"] : "GCAL"
 
     # any tags for this calendar (e.g. "WORK" or "PERSONAL")
-    filetags = ENVIRON["FILETAGS"] != "" ? ENVIRON["FILETAGS"] : "unknown"
+    filetags = ENVIRON["FILETAGS"] != "" ? ENVIRON["FILETAGS"] : "GCAL"
 
     # timezone offsets
     # TODO: this is stupid
